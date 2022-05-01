@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'workorder/index'
+  get 'workorder/new'
+  get 'workorder/show'
   get 'location/index'
   get 'location/new'
   get 'location/show'
