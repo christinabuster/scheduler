@@ -1,4 +1,6 @@
 class TechnicianController < ApplicationController
+  def index
+  end
   #create new technician
   def new
     @technician = tecnician.new(params[:technician])
@@ -7,9 +9,6 @@ class TechnicianController < ApplicationController
     else
       render "new"
     end
-  end
-
-  def index
   end
 
   def show
