@@ -3,6 +3,12 @@ class WorkorderController < ApplicationController
   end
 
   def new
+    #@workorder = workorder.new(params[:workorder])
+    #if @workorder.save
+    #  redirect_to @workorder
+    #else
+    #  render "new"
+    #end
   end
 
   def show
