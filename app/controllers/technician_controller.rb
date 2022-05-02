@@ -1,16 +1,22 @@
 class TechnicianController < ApplicationController
   def index
+    @technician = Technician.all
   end
-  #create new technician
+
   def new
-    @technician = tecnician.new(params[:technician])
-    if @technician.save
-      redirect_to @technician
-    else
-      render "new"
-    end
+    @technician = Technician.new
   end
 
   def show
+    @technician = Technician.find(params[:id])
   end
+
+  def create
+    @tehnician = Technician.new()
+    @technician.name = params[:name]
+    @technician.save
+    #redirect to workorder 
+    redirect_to workorder_path(@workorder)
+  end
+
 end

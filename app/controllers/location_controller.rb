@@ -1,14 +1,10 @@
 class LocationController < ApplicationController
   def index
+    @location = Location.all
   end
 
   def new
-    @location = location.new(params[:location])
-    if @location.save
-      redirect_to @location
-    else
-      render "new"
-    end
+    @location = location.new
   end
 
   def show
