@@ -12,11 +12,12 @@ class TechnicianController < ApplicationController
   end
 
   def create
-    @tehnician = Technician.new()
-    @technician.name = params[:name]
-    @technician.save
-    #redirect to workorder 
-    redirect_to workorder_path(@workorder)
+    @tehnician = Technician.new(params[:technician])
+    if technician.save
+      redirect_to @technicians
+    else
+      render "new"
+    end
   end
 
 end
