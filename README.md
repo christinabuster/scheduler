@@ -1,6 +1,6 @@
 # README
 
-* This scheduling application was built with Ruby on Rails, scheduled work is is called a work order and is completed by technicians at customer locations. My approach to this application was to utilize the MVC design model. The Active Record Associations I applied to this project are the has_many :through Association. Work orders belong to locations and technicians, Technicians have many work orders and locations through work orders, and Locations have many work order and technicians though work orders. This approach joins technicians and locations through work orders.
+This scheduling application was built with Ruby on Rails, scheduled work is is called a work order and is completed by technicians at customer locations. My approach to this application was to utilize the MVC design model. The Active Record Associations I applied to this project are the has_many :through Association. Work orders belong to locations and technicians, Technicians have many work orders and locations through work orders, and Locations have many work order and technicians though work orders. This approach joins technicians and locations through work orders.
 
 The next phase for my approach was to create the data fields for the three tables then generate controllers for each.
 
