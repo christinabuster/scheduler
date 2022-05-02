@@ -1,20 +1,81 @@
-<h2> Schedule </h2>
+<body>
+  <h2 style="text-align: center;">Llyoy's Pest Control Work Orders </h2>
 
-<% @technicians.each do |technician| %>
-<table
-  <tr class="technician">
-    <td class="name"><%= technician.name %></td>
-  </tr>
-  </table>
-<% end %>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> Time </div>
+  <% @technicians.each do |technician| %>
+    <div class="col-xs-12 col-md-2"><%= technician.name %></div>
+  <% end %>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 7:00 am </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 8:00 am </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 9:00 am </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 10:00 am </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 11:00 am </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
 
-<% @workorders.each do |workorder| %>
-<table
-  <tr class="workorder">
-    <td class="name"><%= workorder.technician.name %></td>
-    <td class="name"><%= workorder.location.name %></td>
-    <td class="name"><%= workorder.duration %></td>
-    <td class="name"><%= workorder.price %></td>
-  </tr>
-  </table>
-<% end %>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 12:00 pm </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 2:00 pm </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 2:00 pm </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 3:00 pm </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 4:00 pm </div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+    <div class="col-xs-12 col-md-2">1</div>
+  </div>
+</body>
