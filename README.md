@@ -2,7 +2,7 @@
 
 This scheduling application was built with Ruby on Rails, scheduled work is is called a work order and is completed by technicians at customer locations. My approach to this application was to utilize the MVC design model. The Active Record Associations I applied to this project are the has_many :through Association. Work orders belong to locations and technicians, Technicians have many work orders and locations through work orders, and Locations have many work order and technicians though work orders. This approach joins technicians and locations through work orders. Next I created the data fields and schema for the three tables then generated controllers for each great a few simply actions to create and save new instances. Using irb I tested that I could create data for the table and that the model relationship were acting as planned. Finally added embedded ruby to the work order index view to display a list of technicians and workorders and designed a grid for the schedule.
 
-* For the next phase of this project I would like to implement the following as future improvements:
+*Future improvements:
 
 Create a feature where when a user clicks on an open time slot in the schedule they are alerted of the time between the previous appointment and the next available time slot.
 
@@ -15,6 +15,8 @@ Create an administrative log in feature for shift managers.
 Create a forms feature to create new technicians, locations, and work orders.
 
 Change all uses of workorder to two words, ie WorkOrder, work_order.
+
+Add today's date to the top of the calender day.
 
 * Difficulties I have faced in this process:
 
