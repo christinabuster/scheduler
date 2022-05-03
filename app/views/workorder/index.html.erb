@@ -59,3 +59,13 @@
     <div class="grid-item"></div>
     <div class="grid-item"></div>
    </div>
+   <% @workorders.each do |workorder| %>
+   <div class="grid-item">
+   <%= workorder.location.name %>
+   <br/>
+   <%= workorder.location.name %>
+   <br/>
+   <%= workorder.duration %> Minutes
+   <br/>
+   $<%= workorder.price %>
+   <% end %></div>
