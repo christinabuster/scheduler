@@ -1,109 +1,61 @@
 <h2 style="text-align: center;">Work Orders </h2>
-
-<div class="container border py-3 my-3">
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> Time </div>
-  <% @technicians.each do |technician| %>
-    <div class="col-xs-12 col-md-2"><%= technician.name %></div>
-  <% end %>
-  </div>
-  <hr />
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 7:00 am </div>
-    <div class="col-xs-12 col-md-2"></div>
-  <% @workorders.each do |workorder| %>
-    <div class="col-xs-12 col-md-2">
-      <%= workorder.location.name %>
-      <br />
-      <%= workorder.duration %> Minutes
-      <br />
-      $<%= workorder.price %>
-    </div>
-  <% end %>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 8:00 am </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 9:00 am </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 10:00 am </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 11:00 am </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 12:00 pm </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 2:00 pm </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 2:00 pm </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 3:00 pm </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 col-md-2"> 4:00 pm </div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-    <div class="col-xs-12 col-md-2"></div>
-  </div>
-</div>
+  <div class="grid-container">
+    <div class="grid-item">Time</div>
+    <% @technicians.each do |technician| %>
+    <div class="grid-item"><%= technician.name %></div>
+    <% end %>
+    <div class="grid-item">7:00 am</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">8:00 am</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">9:00 am</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">10:00 am</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">11:00 am</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">12:00 pm</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">1:00 pm</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">2:00 pm</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">3:00 pm</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+   </div>
