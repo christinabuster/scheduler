@@ -17,3 +17,29 @@
   </tr>
   </table>
 <% end %>
+
+<h2 style="text-align: center;">Work Orders </h2>
+  <div class="row">
+    <div class="col-xs-12 col-md-2"> 7:00 am </div>
+    <div class="col-xs-12 col-md-2"></div>
+  <% @workorders.each do |workorder| %>
+    <div class="col-xs-12 col-md-2">
+      <%= workorder.location.name %>
+      <br />
+      <%= workorder.duration %> Minutes
+      <br />
+      $<%= workorder.price %>
+    </div>
+  <% end %>
+    <div class="col-xs-12 col-md-2"></div>
+    <div class="col-xs-12 col-md-2"></div>
+    <div class="col-xs-12 col-md-2"></div>
+  </div>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-md-2"> Time </div>
+    <% @technicians.each do |technician| %>
+      <div class="col-xs-12 col-md-2"><%= technician.name %></div>
+    <% end %>
+    </div>
